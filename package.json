@@ -1,0 +1,23 @@
+{
+  "name": "clean-ai-backend",
+  "version": "1.0.0",
+  "description": "Secure backend for the Clean AI Android app. Receives media + mask uploads, creates processing jobs, delegates to a swappable AI provider, and returns cleaned results.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "sharp": "^0.33.4",
+    "uuid": "^9.0.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
